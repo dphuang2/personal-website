@@ -4,17 +4,15 @@
   position: relative
   overflow: hidden
   font-family: 'Open Sans', sans-serif
-  .video-wrap
-    video
-      position: absolute
-      min-width: 100%
-      min-height: 700px
-      z-index: -1
-      display: block
-      margin: 0 auto
+  video
+    position: absolute
+    min-width: 100%
+    min-height: 700px
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
   .hello-text
     position: relative
-    z-index: 1
     color: white
     font-size: 50px
     padding: auto
@@ -27,7 +25,6 @@
       display: none
     img
       position: relative
-      z-index: 1
       width: 550px
       height: 111px
 .controls-wrap
@@ -37,7 +34,7 @@
   display: block
   right: 0px
   text-align: center
-  z-index: 5
+  z-index: 1
   .controls
     position: relative
     top: 30vh
@@ -65,8 +62,17 @@
 
 
 @media (max-width: 640px)
-  .hello-wrap .hello-text img
-    display: none
-  .hello-wrap .hello-text .name
-      display: inline
-      margin-left: 10px
+  .hello-wrap .hello-text
+    font-size: 35px
+    img
+      // display: none
+      max-width: 100%
+      height: auto
+
+  // .hello-wrap .hello-text .name
+  //     display: inline
+  //     margin-left: 10px
+// @media (max-width: 720px)
+//   .hello-wrap
+//     .hello-text
+//       background-color:  rgba(0, 0, 0, 0.5)

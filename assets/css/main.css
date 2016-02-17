@@ -442,7 +442,6 @@ th {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: red;
   background-size: cover;
   background-position: center;
   min-width: 100%;
@@ -456,6 +455,10 @@ th {
     margin: auto auto;
     position: relative;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7); }
+
+@media (max-width: 640px) {
+  .about-wrap #information-block {
+    font-size: 30px; } }
 
 .projects-wrap {
   height: 700px;
@@ -504,11 +507,11 @@ th {
 
 @media (max-width: 574px) {
   .projects-wrap #project-information .title {
-    font-size: 35px; } }
+    font-size: 40px; } }
 
 @media (max-width: 444px) {
   .projects-wrap #project-information .title {
-    font-size: 25px; } }
+    font-size: 35px; } }
 
 .hello-wrap {
   display: -webkit-flex;
@@ -518,16 +521,16 @@ th {
   position: relative;
   overflow: hidden;
   font-family: 'Open Sans', sans-serif; }
-  .hello-wrap .video-wrap video {
+  .hello-wrap video {
     position: absolute;
     min-width: 100%;
     min-height: 700px;
-    z-index: -1;
-    display: block;
-    margin: 0 auto; }
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
   .hello-wrap .hello-text {
     position: relative;
-    z-index: 1;
     color: white;
     font-size: 50px;
     padding: auto;
@@ -540,7 +543,6 @@ th {
       display: none; }
     .hello-wrap .hello-text img {
       position: relative;
-      z-index: 1;
       width: 550px;
       height: 111px; }
 
@@ -551,7 +553,7 @@ th {
   display: block;
   right: 0px;
   text-align: center;
-  z-index: 5; }
+  z-index: 1; }
   .controls-wrap .controls {
     position: relative;
     top: 30vh;
@@ -573,11 +575,11 @@ th {
         width: 100%; }
 
 @media (max-width: 640px) {
-  .hello-wrap .hello-text img {
-    display: none; }
-  .hello-wrap .hello-text .name {
-    display: inline;
-    margin-left: 10px; } }
+  .hello-wrap .hello-text {
+    font-size: 35px; }
+    .hello-wrap .hello-text img {
+      max-width: 100%;
+      height: auto; } }
 
 .contact-wrap {
   display: -webkit-flex;

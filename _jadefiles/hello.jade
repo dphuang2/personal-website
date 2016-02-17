@@ -1,8 +1,7 @@
 section.hello-wrap
-  .video-wrap
-    video#video(autoplay loop muted)
-      source(src="assets/videos/video.mp4" type="video/mp4")
-      source(src="assets/videos/video.webm" type="video/webm")
+  video#video(autoplay loop muted)
+    source(id="srcmp4" src="assets/videos/video.mp4" type="video/mp4")
+    source(id="srcwebm" src="assets/videos/video.webm" type="video/webm")
   .hello-text Hello! My name is
     .name Dylan Huang
     img(src="assets/img/name.png")
