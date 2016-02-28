@@ -29,15 +29,16 @@
   margin: 0 auto
   margin-top: 20px
   // background-color: #eee
-  transition: all 0.5s ease-in-out
   img
     height: 100%
     width: 100%
     border-radius: 10px
+    transition: all 0.5s ease-in-out
 
 
-.hover-scale:hover
-  transform: scale(1.1)
+.hover-scale
+  img:hover
+    transform: scale(1.1)
 // @media (max-width: 775px)
 //   .hover-scale:hover
 //     transform: none
@@ -50,3 +51,6 @@
 @media (max-width: 444px)
   .projects-wrap #project-information .title
     font-size: 35px
+@media (max-width: 295px)
+  .projects-wrap #project-information .title
+    font-size: 30px

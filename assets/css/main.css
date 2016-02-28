@@ -490,14 +490,14 @@ th {
   max-width: 840px;
   max-height: 180px;
   margin: 0 auto;
-  margin-top: 20px;
-  transition: all 0.5s ease-in-out; }
+  margin-top: 20px; }
   .image-block img {
     height: 100%;
     width: 100%;
-    border-radius: 10px; }
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out; }
 
-.hover-scale:hover {
+.hover-scale img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1); }
 
@@ -512,6 +512,10 @@ th {
 @media (max-width: 444px) {
   .projects-wrap #project-information .title {
     font-size: 35px; } }
+
+@media (max-width: 295px) {
+  .projects-wrap #project-information .title {
+    font-size: 30px; } }
 
 .hello-wrap {
   display: -webkit-flex;
@@ -624,6 +628,8 @@ th {
       text-align: center;
       margin-bottom: 20px;
       margin-top: 30px; }
+    .contact-wrap .information-wrap #link:hover {
+      color: #7E64D6; }
     .contact-wrap .information-wrap #youtube {
       height: 200px;
       width: 220px; }
@@ -691,7 +697,6 @@ body {
 
 .blinking-cursor {
   font-weight: 100;
-  font-size: inherit;
   color: white;
   font-size: inherit;
   -webkit-animation: 1s blink step-end infinite;
@@ -700,21 +705,18 @@ body {
 
 @keyframes "blink" {
   from, to {
-    font-size: 0px; }
+    visibility: hidden; }
   50% {
-    color: white;
-    font-size: inherit; } }
+    visibility: visible; } }
 
 @-webkit-keyframes "blink" {
   from, to {
-    font-size: 0px; }
+    visibility: hidden; }
   50% {
-    color: white;
-    font-size: inherit; } }
+    visibility: visible; } }
 
 @-ms-keyframes "blink" {
   from, to {
-    font-size: 0px; }
+    visibility: hidden; }
   50% {
-    color: white;
-    font-size: inherit; } }
+    visibility: visible; } }
