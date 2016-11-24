@@ -1,6 +1,25 @@
-@import "reset";
+@import "bootstrap";
 @import "syntax";
 
 body {
     background: white;
 }
+
+.about{
+  width: 70%;
+  margin: auto;
+}
+
+.feed{
+  overflow: auto;
+  height: 100vh;
+}
+@media (max-width: 768px){
+  .about{
+    height: 250px;
+  }
+  .feed{
+    height: calc(100vh - 250px);
+  }
+}
+
