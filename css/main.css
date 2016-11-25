@@ -6000,6 +6000,11 @@ button.close {
   color: #009999; }
 
 /* Literal.Number.Integer.Long */
+@font-face {
+  font-family: "raleway_thin-webfont";
+  src: url("assets/fonts/raleway_thin-webfont.ttf"), url("assets/fonts/raleway_thin-webfont.ttf");
+  /* IE */ }
+
 body {
   background: white; }
 

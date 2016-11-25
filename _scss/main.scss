@@ -1,8 +1,14 @@
 @import "bootstrap";
 @import "syntax";
 
+@font-face{
+  font-family: "raleway_thin-webfont";
+  src: url('assets/fonts/raleway_thin-webfont.ttf'),
+  url('assets/fonts/raleway_thin-webfont.ttf'); /* IE */
+}
+
 body {
-    background: white;
+  background: white;
 }
 
 .about{
