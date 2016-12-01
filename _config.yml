@@ -3,7 +3,7 @@ email: dylan.p.huang@gmail.com
 baseurl: ""
 paginate: 5
 paginate_path: "/blog/page-:num"
-google_analytics: 
+google_analytics: UA-82333002-2
 
 # SEO settings
 title: Dylan Huang
