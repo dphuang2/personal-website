@@ -8,7 +8,7 @@ google_analytics:
 # SEO settings
 title: Dylan Huang
 description: Web enthusiast, Computer Engineer, Dog Lover
-url: ""
+url: "dylanhuang.com"
 twitter_username: https://twitter.com/dhuangster
 default_img: https://scontent-iad3-1.xx.fbcdn.net/t31.0-8/13653050_1241431949208972_2082487078901060498_o.jpg
 
@@ -33,5 +33,5 @@ sass:
 # Gems
 gems: [jekyll-paginate, jekyll-sitemap, octopress-autoprefixer]
 
-# Future posts
+# Future posts to be published always
 future: true
