@@ -6000,11 +6000,6 @@ button.close {
   color: #009999; }
 
 /* Literal.Number.Integer.Long */
-@font-face {
-  font-family: "raleway_thin-webfont";
-  src: url("assets/fonts/raleway_thin-webfont.ttf"), url("assets/fonts/raleway_thin-webfont.ttf");
-  /* IE */ }
-
 body {
   background: white; }
 
@@ -6013,11 +6008,13 @@ body {
   margin: auto; }
 
 .feed {
+  padding: 10px;
   overflow: auto;
-  height: 100vh; }
+  height: 100vh;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5); }
 
 @media (max-width: 768px) {
   .about {
-    height: 250px; }
+    height: 200px; }
   .feed {
-    height: calc(100vh - 250px); } }
+    height: calc(100vh - $mobile-box); } }

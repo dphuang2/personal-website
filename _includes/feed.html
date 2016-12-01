@@ -1,5 +1,13 @@
 <div class="feed">
-  {% for post in site.posts %}
-  {{post}}
-  {% endfor %}
+    {% for post in site.posts %}
+    <div class="container-fluid">
+        <a href="{{post.url}}">
+            <p class="meta">{{ post.date | date_to_string }}</p>
+
+            <div class="post">
+                {{ post.description }} <img src="{{post.img}}" width="100px">
+            </div>
+        </a>
+    </div>
+    {% endfor %}
 </div>
